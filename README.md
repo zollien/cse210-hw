@@ -1,5 +1,5 @@
 # cse210-ww-student-template
-Zollien Doev replaced this code.
+Zollien Dove replaced this code.
 
 This repository contains the starter code for many different projects. They are arranged as follows:
 
