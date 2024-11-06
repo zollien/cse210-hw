@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // code in body, strigs are named. print function similar to python.
+        //comment: code in body, strings are named, print function similar to python.
         Console.Write("What is your first name? ");
         string first = Console.ReadLine();
 
