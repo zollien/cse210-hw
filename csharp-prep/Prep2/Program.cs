@@ -13,17 +13,37 @@ class Program
 
         string grade = "";
 
-        if (percentage_grade >= 90)
+        if (percentage_grade >= 94)
         {
             grade = "A";
         }
-        else if (percentage_grade >= 80)
+        else if (percentage_grade >= 90)
+        {
+            grade = "A-";
+        }
+        else if (percentage_grade >= 87)
+        {
+            grade = "B+";
+        }
+        else if (percentage_grade >= 84)
         {
             grade = "B";
         }
-        else if (percentage_grade >= 70)
+        else if (percentage_grade >= 80)
+        {
+            grade = "B-";
+        }
+        else if (percentage_grade >= 77)
+        {
+            grade = "C+";
+        }
+        else if (percentage_grade >= 74)
         {
             grade = "C";
+        }
+        else if (percentage_grade >= 70)
+        {
+            grade = "C-";
         }
         else if (percentage_grade >= 60)
         {
@@ -42,6 +62,5 @@ class Program
         {
             Console.WriteLine("Unfortunately, you did not pass. Sign up for tutoring!");
         }
-
     }
 }
