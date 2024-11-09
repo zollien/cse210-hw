@@ -34,8 +34,9 @@ while (guess_input != magic_number)
     {
         Console.WriteLine("You guessed it!");
     }
+}
 
-    // break; can it be used here to stop the loop?
+// break; can it be used here to stop the loop?
 
 //Working to this point, lines 1-35 all ok.
 
@@ -43,6 +44,14 @@ while (guess_input != magic_number)
 //This is an attempte as adding the stretch code
 
 /*
+
+    for (int i = 0; i < guess.Count; i++)
+    {
+        Console.ReadLine(guess[i]);
+    }
+    {
+        Console.WriteLine($" You guess the magic number on after {outputs} tries");
+    }
 using System;
 
 namespace MyApplication
