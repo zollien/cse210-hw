@@ -7,7 +7,7 @@ class Program
     {
         // create new jobs here, each woth own instance id, job1, job2 etc using job1.variable
         Job job1 = new Job();
-        job1._jobTitle = "Software Enginneer";
+        job1._jobTitle = "Software Engineer";
         job1._company = "Microsoft";
         job1._startYear = 2019;
         job1._endYear = 2022;
@@ -24,7 +24,7 @@ class Program
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
 
-        //Display Reume
+        //Display Resume
         myResume.Display();
     }
 }
