@@ -6,14 +6,16 @@ class Program
     {
         // is this main, is this like calling in the main in python where you have to identify each function that is about to be used in the program?
         DisplayWelcome();
+        //user inputs
         string name = PromtUserName();
         int favnumber = PromptUserNumber();
+        //outputs
         int square = SquareNumber(favnumber);
         DisplayResult(name, square);
     }
 
     //Displays the message, "Welcome to the Program!"
-    DisplayWelcome()
+    static void DisplayWelcome()
     {
         Console.WriteLine("Welcome to the program!");
     }
@@ -21,7 +23,7 @@ class Program
     //Asks for and returns the user's name (as a string)
     static string PromptUserName()
     {
-        Console.WriteLine("Please enter your name: ");
+        Console.Write("Please enter your name: ");
         string name = Console.ReadLine();
         return name;
     }
@@ -29,7 +31,7 @@ class Program
     //Asks for and returns the user's favorite number (as an integer)
     static int PromptUserNumber()
     {
-        Console.WriteLine("Please enter your favorite number: ");
+        Console.Write("Please enter your favorite number: ");
         int favnumber = int.Parse(Console.ReadLine());
         return favnumber;
     }
