@@ -7,7 +7,8 @@ public class Journal
     public void AddEntry() //paremeters are not needed inside AddEntry(Entry entry)
     {
         Entry entry = new Entry(); //this is a constructor covered in w04 info
-
+        entry._date = DateOnly
+        _entries
 
         //entry date added from DateTime.Now in Journal
         entry _date
