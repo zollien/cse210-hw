@@ -12,7 +12,7 @@ public class Resume /*the class program is the shell that contains teh program*/
 
     //creates new list for jobs to populate
     public List<Job> _jobs = new List<Job>();
-    
+
     public void Display()
     {
         //display job title etc
@@ -24,4 +24,4 @@ public class Resume /*the class program is the shell that contains teh program*/
             job.Display();
         }
     }
-}
+}           

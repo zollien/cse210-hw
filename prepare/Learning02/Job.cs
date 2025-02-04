@@ -13,7 +13,7 @@ public class Job /*the class JOB is a public class*/
     public int _endYear;
 
     //instance - 
-    public void Display() 
+    public void Display()
     {
         //display job details: title, company, start/end year
         //variable names start lowercase

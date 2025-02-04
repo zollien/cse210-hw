@@ -3,9 +3,9 @@ using System;
 /*"namepaces game" the there is ususally a namesspace which like a package that can be referenced game would be the name of the package */
 class Program /*the class program is the shell that contains the program*/
 {
-    
-    static void Main(string[] args) 
-    
+
+    static void Main(string[] args)
+
     {
         //create new jobs here, each job with its own instance id, job1, job2 etc
 
