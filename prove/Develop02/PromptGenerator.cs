@@ -6,10 +6,10 @@ public class PromptGenerator
     {
         "Which scripture inspired me today?",
         "Who was the most interesting person I interacted with today?",
-        "What was the nest part of my day?",
+        "What was the best part of my day?",
         "what was the strongest emotion i felt today?",
-        "How did I see teh hand of the Lord in my life today?",
-        "if I had one thing I could do over today, what would it be?"
+        "How did I see the hand of the Lord in my life today?",
+        "If I had one thing I could do over today, what would it be?"
     };  // ; after curlybracket represents the body of the data structur/list that is being declared
 
     //call random generator, returns an empty string. no erro because it was supposed to return something

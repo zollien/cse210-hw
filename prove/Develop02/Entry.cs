@@ -7,8 +7,8 @@ public class Entry
     public string _entryText;
     public string Display() //builds a string that will return here, called and displayed by Program.cs 
     {
-        return $"Date: {_date} \n" // \n new line
-        + $"Prompt: {_promptText} \n"
+        return $"Date: {_date} | " // \n new line
+        + $"Prompt: {_promptText} | "
         + $"Entry: {_entryText}";
     }
 }

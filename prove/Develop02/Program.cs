@@ -1,5 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+using System.IO;
 class Program
 {
     static void Main(string[] args)
@@ -30,13 +32,14 @@ class Program
             }
             else if (choice == 3) //option 3 load journal from file
             {
-                Console.WriteLine("Enter the file name");
+                Console.WriteLine("Load your journal. Enter the file name");
                 string file = Console.ReadLine();
                 journal.LoadFromFile(file);
             }
             else if (choice == 4) //option 4 save journal entry to file
             {
-                Console.WriteLine("Enter the file name");
+
+                Console.WriteLine("Where should this journal save? Enter the file name");
                 string file = Console.ReadLine();
                 journal.SaveToFile(file);
             }
