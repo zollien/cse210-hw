@@ -24,15 +24,14 @@ public class Journal
             Console.WriteLine(entry.Display());
         }
     }
-    //OPTION 3 Load from File
-    public static List<Entry> LoadFromFile(string file) //connects to cvs or file. parameters needed to load from file
-    {
-        _entries.Clear(); //clears previous entry
 
-        string file = "journal.txt";
+    //OPTION 3 Load from File
+    public List<Entry> LoadFromFile(string file) //connects to cvs or file. parameters needed to load from file
+    {
+
         string[] lines = System.IO.File.ReadAllLines(file);
 
-
+        List<Entry> newEntries = new List<Entry>();
         foreach (string line in lines)
         {
             string[] parts = line.Split("|");
@@ -40,23 +39,21 @@ public class Journal
             entry._date = parts[0];
             entry._promptText = parts[1];
             entry._entryText = parts[2];
-            _entries.Add(entry); //appends to file
+            newEntries.Add(entry);
         }
-        return _entries; // to return the entries in the journal
+
+        return newEntries; // to return the entries in the journal
     }
     // OPTION 4 Save to File
-    SaveToFile(_entries);
-    public static void SaveToFile(List<Entry> entries) //paramenters needed to save to file
+    public void SaveToFile(List<Entry> entries, string file) //paramenters needed to save to file, void because theer is nothing to return
 
     {
-        string file = "journal.txt";
-
         using (StreamWriter outputFile = new StreamWriter(file)) //opens the file and closes it when written.
-        {
+
             foreach (Entry entry in entries)
             {
                 outputFile.WriteLine($"{entry._date} | {entry._promptText} | {entry._entryText}");
             }
-        }
+
     }
 }

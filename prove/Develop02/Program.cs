@@ -38,10 +38,10 @@ class Program
             }
             else if (choice == 4) //option 4 save journal entry to file
             {
-
                 Console.WriteLine("Where should this journal save? Enter the file name");
                 string file = Console.ReadLine();
-                journal.SaveToFile(file);
+                journal.SaveToFile(journal._entries, file); //this accesses the journal variable _entries
+
             }
             else if (choice == 5) //option 5 quits the journal program
             {
